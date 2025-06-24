@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seminar Schedule</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+    }
+    th {
+      background-color: #ddd;
+    }
+    .yellow {
+      background-color: #ffffcc;
+    }
+    .blue {
+      background-color: #ccccff;
+    }
+    .green {
+      background-color: #ccffcc;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th rowspan="2">Day</th>
+      <th colspan="2">Schedule</th>
+      <th rowspan="2">Topic</th>
+    </tr>
+    <tr>
+      <th>Begin</th>
+      <th>End</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Monday</td>
+      <td class="yellow">8:00 a.m.</td>
+      <td class="blue">5:00 p.m.</td>
+      <td>Introduction to XML</td>
+    </tr>
+    <tr>
+      <td class="yellow">8:00 a.m.</td>
+      <td class="blue">5:00 p.m.</td>
+      <td>Validity: DTD and Relax NG</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td class="yellow">8:00 a.m.</td>
+      <td class="yellow">11:00 a.m.</td>
+      <td>XPath</td>
+    </tr>
+    
+    <tr>
+      <td>Tuesday</td>
+      <td class="blue">2:00 p.m.</td>
+      <td class="blue">5:00 p.m.</td>
+      <td>XSL Transformations</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td class="green">8:00 a.m.</td>
+      <td class="green">12:00 p.m.</td>
+      <td>XSL Formatting Objects</td>
+    </tr>
+  </table>
+
+</body>
+</html>
