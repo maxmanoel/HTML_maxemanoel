@@ -1,127 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exemplo de formulario</title>
-    <style> rel="stylesheet">
-    *,*: ::before, *:after{
-        -webkit-box-sizing : border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        
-    
- .clear(clear:both)
- body
- font: 
-
-
-
- #tudo
-
-
-
-
-
-
-
-
+    <title>Exemplo de formulario</title>
+    <style rel = "stylesheet">
+        *,*:before,*:after{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
-        h1,h2,h3,h4,h5,h6 {color: #036;}
+        .clear{clear: both}
 
-        .topo_header{
+    body{
+            font: 18px/1.4 arial, sans-serif;
+            color: #333;
+            background: #ccc;
+        }
+        
+    #tudo{
+        width:100%;
+        max-width:1200px;
+        min-width: 860px;
+        margin: 0 auto;
+        background: #fff;
+    }
+
+    h1,h2,h3,h4,h5,h6 {color:#036}
+
+    .topo_header{
         background: #036;
         padding: 5px 20px;
-        }
+    }
 
-        .topo_header h1{
+    .topo_header h1{
         font-size: 36px;
         margin: 4px 0 2px 0;
-        .topo_header  a{
-            color: #fff ;
-            text=decorration
+    }
 
+    .topo_header a{
+        color: #fff;
+        text-decoration: none;
+    }
 
-}
-}
     .topo_header h2{
-    font-size: 20px;
-    margin: 2px 0 4px 0;
-
-    color : #fff;
+        font-size: 20px;
+        margin: 2px 0 4px 0;
+        color: #fff;
     }
 
-    .rodape {
+    .principal{
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .rodape{
         background: #036;
-        color :  #fff;
-        padding: 5px 0 ;
+        padding: 5px 0;
+        color: #fff;
         text-align: center;
-
-}
-
-    pre {font-size: 14px;}
-    @media(max-widtch: 1040px){
-        pre(font-size: 12;)
     }
 
-    /*FORMULARIO */  
+    pre{font-size: 14px;}
+    @media(max-width: 1040px){
+        pre{font-size: 12px;}
+    }
     </style>
-    <head>
-    <body> class = "home">
-        <div id="tudo">  </div>
-            <div class="topo"></div>
-                <header class="topo_header">
-                    <hgroup>
-                        <h1> <a href ="/"> Formularios</a></h1>
-                        <h2>Elementos e atributos</h2>
-
-                    </hgroup>
-                </header>
-
-                <div>/--logo </div>
-
-                    <div class="principal"> </div>
-                        <main> </main>
-                            <section></section>
-                                <h1> Elementos fieldset, legend, label</h1>
+</head>
+<body class="home">
+    <div id="tudo">
+        <div class="topo">
+            <header class="topo_header">
+                <hgroup>
+                    <h1><a href="/">Formularios</a></h1>
+                    <h2> Elementos e atributos</h2>
+                </hgroup>
+            </header>
+        </div> <!--topo-->
 
 
-                                <form action="" method="">
+        <div class="principal">
+            <main>
+                <section>
+                    <h1>Elementos Fielset,Legend,Label</h1>
+            <form action="" method="">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p><small>Campos com Rótulo implicito</small></p>
+                    <label>Nome:<input type="text" name="nome"></label>
+                    <label>Sobrenome:<input type="text" name="sobrenome"></label>
+                    <label>Email:<input type="email" name="email"></label>
+                </fieldset>
 
-                                    <fieldset>
-                                        <legend>dados pessoais </legend>
-
-                                        <p><small>campos com rotulo implicito</small></p>
-                                        <label>Nome: <input type= "text" name="nome"></label>
-                                        <label>sobrenome: <input type= "text" name="sobrenome"></label>
-                                        <label>email: <input type= "text" name="email"></label>
-
-
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend>sua prefencias  </legend>
-
-              <p><small>campos com rotulo implicito</small></p>
-                  <label for="livro">livro:</label>
-                  <input type= "text" id="livro" name="livro"></label>
-
-                  <label for="filme">filme:</label>
-                  <input type= "text" id="filme" name="filme"></label>
-                  <label for="esporte">esporte:</label>
-
-                  <input type= "text" id="esporte" name="esporte"></label>
-
-
-                          
-                                        
-
-                                    </fieldset>
-
-
-                                    </fieldset>
-                                </form>
-                            
-                            </div> <!-- PRINCIPAL-->
+                <fieldset>
+                    <legend>Suas prefencias</legend>
+                    <p><small>Campos com Rótulo explicitos</small></p>
+                    <label for="livro">Livro:</label>
+                        <input type="text" id="livro" name="livro">
+                    <label for="filme">Filme:</label>
+                        <input type="text" id="filme" name="filme">
+                    <label for="esporte">Esporte:</label>
+                        <input type="text" id="esporte" name="esporte">
+                </fieldset>
+            </form>
+                </section>
+            </main>
+        </div>
+        <div class="rodape">
+            <footer>
+            
+                         </div> <!-- PRINCIPAL-->
 
                             <div class="rodape">
 
@@ -129,7 +117,7 @@
                                     <small>SITE DESENVOLVIDO PELO MAX ..........</small>
                                 </footer>
                             </div> <!--./RODAPE-->
-                            
+
                     
              
           
